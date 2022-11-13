@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Fastabiqullll</title>
+	<style type="text/css">
+		body{
+			background: #8FBC8F;
+		}
+		img{
+			width: 16em;
+			height: 18em;
+			border-radius: 50%;
+		}
+		button{
+			margin-left: 1em;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<img src="hilmi.jpeg">
+		<h1>Is She Beautiful??</h1>
+		<button onclick="yes()">Yess</button>
+		<button onclick="no(this)">No</button>
+	</center>
+
+	<script>
+
+		function yes(){
+			alert("Of Cource, She's Beautiful");
+		}
+		function no(btn){
+			btn.style.position = "absolute";
+			btn.style.bottom = `${Math.random() * 300}px`;
+			btn.style.left = `${Math.random() * 300}px`;
+		}
+	</script>
+</body>
+</html>
